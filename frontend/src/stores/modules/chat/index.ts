@@ -25,11 +25,15 @@ export const useChatStore = defineStore(
     const sydneyConfigs = ref<SydneyConfig[]>([
       {
         baseUrl: 'https://sydney.bing.com',
-        label: 'Bing 官方',
+        label: 'Bing',
       },
       {
         baseUrl: 'https://sydney.vcanbb.chat',
         label: 'Cloudflare',
+      },
+      {
+        baseUrl: 'https://bing.ntd.workers.dev',
+        label: 'Cl0udf1are',
       },
       {
         baseUrl: location.origin,
